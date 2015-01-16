@@ -1,0 +1,34 @@
+// Place all the styles related to the barcodes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body{
+  background-color: #4e9eed !important;
+}
+
+.mainwrapper{
+  color:white;
+  text-align:center;
+  @include outer-container;
+
+  h1{
+    font-size: 3.5em;
+    margin-bottom: 0.5em;
+    text-align:center;
+  }
+
+  p{
+    font-size:1.5em;
+    margin-bottom: 2.5em;
+  }
+
+}
+
+.main{
+  @include shift(2);
+
+  @include span-columns(6);
+
+
+}

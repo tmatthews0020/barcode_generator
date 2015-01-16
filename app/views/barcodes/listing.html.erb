@@ -1,0 +1,12 @@
+
+<%= csrf_meta_tags %>
+<p>
+  <%= @type %>
+</p>
+<p>
+  <%= @data %>
+
+  <% @barcodes.each do |x| %>
+  <%= image_tag x, :alt => "barcode" %>
+  <% end %>
+</p>

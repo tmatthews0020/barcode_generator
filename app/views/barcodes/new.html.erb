@@ -1,0 +1,20 @@
+
+<%= csrf_meta_tags %>
+<div class="mainwrapper">
+  <h1> (# + Amount)/Submit = Barcodes</h1>
+  <p> If you need barcodes, you are in the right place! </p>
+  <div class="main">
+
+
+<%= form_tag(barcodes_listing_path ,method: "post") do %>
+
+  <%= label_tag(:data, "Barcode #:") %>
+  <%= text_field_tag(:data) %>
+  <%= label_tag(:amount, "Amount of Barcodes:") %>
+  <%= text_field_tag(:amount) %>
+  <%= submit_tag("submit") %>
+  <% end %>
+
+
+</div>
+</div>
