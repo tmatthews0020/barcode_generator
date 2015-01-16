@@ -20,6 +20,11 @@ gem 'bourbon'
 gem 'neat'
 gem 'bitters'
 
+group :production do
+  gem 'pg'
+
+
+end
 
 # Use jQuery as the JavaScript library
 gem 'jquery-rails', '~> 4.0.0.beta2'
